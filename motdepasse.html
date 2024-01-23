@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Generateur de mot de passe</title>
+        <meta charset="UTF-8">
+        <link href="motdepasse.css" rel="stylesheet">
+        <script href="motdepasse.js"></script>
+    </head>
+
+    <body>
+        <h1 id="nom">Mot de passe</h1>
+        <p id="txt1">Choisissez vos options:</p>
+        <div class="checkbox-container">
+            <form>
+                <div class="checkbox-item"><label for="nbr-carac">
+                    nombre de caracteres:   <input id="nombres" type="number" name="nbr-carac">
+                </label></div>
+
+                <div class="checkbox-item"><label for="maj">
+                    <input type="checkbox" name="maj">inclure des lettres majuscules
+                </label></div>
+
+                <div class="checkbox-item"><label for="min">
+                    <input type="checkbox" name="min">inclure des lettres minuscules
+                </label></div>
+
+                <div class="checkbox-item"><label for="chiffres">
+                    <input type="checkbox" name="chiffres">inclure des chiffres
+                </label></div>
+
+                <div class="checkbox-item"><label for="carac-speciaux">
+                    <input type="checkbox" name="carac-speciaux">inclure des caracteres speciaux
+                </label></div>
+            </form>
+        </div>
+        
+        <div class="generer-container">
+            <button id="generer" onclick="generatePassword()">Creer le mot de passe</button>
+        </div>
+    </body>
+</html>
